@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class PlayerController : MonoBehaviour
     public float JumpForce =5f;
     public Animator animator;
     public bool IsGrounded;
+    public static int score = 0 ;
+    public bool whitedoor = false;
 
     void Start()
     {
@@ -32,6 +35,22 @@ public class PlayerController : MonoBehaviour
         }
     }
     
+    private void OnTriggerEnter2D(Collider2D collision){
+        if(collision.tag == "fire"){
+            SceneManager.LoadScene(0);
+        }
+        else if(collision.tag == "blue_gem"){
+            Debug.Log("Score : "+ score);
+            Destroy(collision.gameObject);
+
+            score += 1;
+                       Debug.Log("Score : "+ score);
+        }
+        if(collision.tag == "white_door"){
+            whitedoor = true;
+        }
+
+    }
     // Update is called once per frame
     void Update()
     {

@@ -11,6 +11,7 @@ public class player2controller : MonoBehaviour
     public float JumpForce =5f;
     public Animator animator;
     public bool IsGrounded;
+    public bool reddoor= false;
 
     void Start()
     {
@@ -30,7 +31,12 @@ public class player2controller : MonoBehaviour
             IsGrounded = true;
         }
     }
-    
+      private void OnTriggerEnter2D(Collider2D collision){
+        if(collision.tag == "red_door"){
+            reddoor = true;
+        }
+
+    }
     // Update is called once per frame
     void Update()
     {

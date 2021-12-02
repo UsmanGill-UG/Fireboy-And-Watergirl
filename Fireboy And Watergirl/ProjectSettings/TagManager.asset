@@ -9,6 +9,10 @@ TagManager:
   - lever
   - spikes
   - goldenkey
+  - fire
+  - blue_gem
+  - red_door
+  - white_door
   layers:
   - Default
   - TransparentFX
@@ -54,6 +58,9 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: door
+    uniqueID: 2360077527
     locked: 0
   - name: Player
     uniqueID: 1364960649
