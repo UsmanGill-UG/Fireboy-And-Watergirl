@@ -3,18 +3,22 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - ground
+  - players
+  - lever
+  - spikes
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - switch
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - platforms
+  - player
+  - Background
+  - golem1
   - 
   - 
   - 
@@ -38,6 +42,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: background
+    uniqueID: 138228283
+    locked: 0
+  - name: platforms
+    uniqueID: 3608156875
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 1364960649
     locked: 0
