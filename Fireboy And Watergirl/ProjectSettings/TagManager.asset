@@ -8,6 +8,7 @@ TagManager:
   - players
   - lever
   - spikes
+  - goldenkey
   layers:
   - Default
   - TransparentFX
@@ -44,6 +45,9 @@ TagManager:
   m_SortingLayers:
   - name: background
     uniqueID: 138228283
+    locked: 0
+  - name: new bg
+    uniqueID: 3191387183
     locked: 0
   - name: platforms
     uniqueID: 3608156875
