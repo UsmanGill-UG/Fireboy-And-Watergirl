@@ -11,7 +11,7 @@ public class platform2 : MonoBehaviour
         
     }
 
-  public GameObject lever;
+    public GameObject lever;
     public float limit=10f;
     public float speed = 2f;
     public float position=0f;

@@ -13,6 +13,20 @@ TagManager:
   - blue_gem
   - red_door
   - white_door
+  - purple_tag
+  - coin
+  - water
+  - gold_key
+  - purple_key
+  - jumpground
+  - BOX
+  - goldchest
+  - purplechest
+  - highjump
+  - speed
+  - antigravity
+  - ag
+  - time
   layers:
   - Default
   - TransparentFX
@@ -50,6 +64,9 @@ TagManager:
   - name: background
     uniqueID: 138228283
     locked: 0
+  - name: mid bg
+    uniqueID: 2543013351
+    locked: 0
   - name: new bg
     uniqueID: 3191387183
     locked: 0
@@ -61,6 +78,9 @@ TagManager:
     locked: 0
   - name: door
     uniqueID: 2360077527
+    locked: 0
+  - name: fire/water
+    uniqueID: 2305462361
     locked: 0
   - name: Player
     uniqueID: 1364960649

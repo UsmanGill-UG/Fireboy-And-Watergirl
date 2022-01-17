@@ -15,9 +15,13 @@ public class levelcontroller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // for level 1
         if(player1.GetComponent<PlayerController>().whitedoor &&  player2.GetComponent<player2controller>().reddoor){
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
-        
+        // for level 2
+        if(player1.GetComponent<PlayerController>().gcopen &&  player2.GetComponent<player2controller>().pkopen){
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+        }
     }
 }
